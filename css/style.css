@@ -1,0 +1,574 @@
+body {
+    background: #F2F0F0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.small-h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+.small-h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+
+}
+
+.heading-h4 {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600
+}
+
+.heading-h2 {
+    color: #4c4c4c;
+    margin: 24px auto;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: roboto condensed;
+}
+
+.heading-h6 {
+    font-size: 0.9333333333333333rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+}
+
+.heading-h5 {
+    font-size: 1.6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.33;
+    letter-spacing: 0em;
+    font-weight: 600
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.p2 {
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    font-size: 1.0666666666666667rem;
+    color: black;
+}
+
+/*about us*/
+
+.AboutusBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.AboutusBox-left {
+    width: 100%;
+    /*background: white;*/
+    padding: 10px;
+}
+
+.AboutusBox-right {
+    width: 100%;
+    background: white;
+    padding: 10px;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.profile-pos {
+    display: inline;
+    font-size: 1.2rem
+}
+
+.profile-desc {
+    color: #7A7A7A;
+}
+
+/*end of about us*/
+
+/*contact us*/
+.contact-us-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.contact-us-left {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-us-right {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*end of contact us*/
+
+.urls {
+    text-decoration: underline;
+    color: #551A8B;
+}
+
+.box-border {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px
+}
+
+.box-shadow {
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*business loan*/
+.jss382 {
+    margin: 16px auto;
+    font-size: 2rem;
+    margin-top: 24px;
+    text-align: center;
+    font-family: roboto condensed;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.jss497 tbody td {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.rate-interst-h6 {
+    margin-top: 10px;
+    font-size: 1.3333333333333333rem;
+    font-weight: normal
+}
+
+/*table*/
+.MuiTable-root {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.jss543 {
+    border-top: 1px solid #ccc;
+}
+
+.jss543 tbody tr:first-child td {
+    padding: 1rem;
+}
+
+.jss444 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.jss543 tbody td {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.jss543 tbody tr:first-child {
+    color: #fff;
+    font-size: 16px;
+    border-left: 1px solid #9fc9e2;
+    font-weight: 600;
+    border-right: 1px solid #4689b1;
+    background-size: contain;
+    background-color: #55a6d7;
+    background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+}
+
+.jss549 {
+    border-top: 1px solid #ccc;
+}
+
+.jss549 thead th, .jss549 tbody td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.jss549 thead tr:first-child th {
+    padding: 1rem;
+}
+
+
+.jss549 thead td {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.jss549 thead tr:first-child {
+    color: #fff;
+    font-size: 16px;
+    border-left: 1px solid #9fc9e2;
+    font-weight: 600;
+    border-right: 1px solid #4689b1;
+    background-size: contain;
+    background-color: #55a6d7;
+    background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+}
+
+.jss509 {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 16px;
+    text-align: left;
+    border-radius: 3px;
+}
+
+
+/*table*/
+
+
+/*acordian*/
+#accordionExample .accordionBtn:before,
+#accordionExample .accordionBtn.collapsed:before {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 25px;
+    height: 25px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #50bbaa;
+    text-align: center;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    transform: rotate(135deg);
+    transition: all 0.3s ease 0s;
+}
+
+#accordionExample .accordionBtn.collapsed:before {
+    color: #a0a0a0;
+    transform: rotate(0);
+}
+
+.card-head-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+}
+
+.card-head-columns-left {
+    background: white;
+
+}
+
+.card-head-columns-right {
+    text-align: right;
+    background: white;
+
+}
+
+.heading-pannel {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 1px;
+}
+
+.collapse-p {
+    text-align: justify;
+    font-size: 15px;
+    color: black;
+}
+
+ol > li::before {
+    font-weight: bold;
+}
+
+.onthisPage {
+    font-size: 1.0666666666666667rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    cursor: pointer;
+    padding-left: 30px;
+    color: black;
+}
+
+.onthisPage:hover {
+    color: black;
+}
+
+.aBorder {
+    border-top: 1px dashed darkgrey;
+}
+
+/*end of acordian*/
+/*end of business loan*/
+
+
+/*home  */
+
+.container-work {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.work-box-shadow {
+    -webkit-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.work-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    background: white;
+    border-radius: 20px;
+    padding: 60px 30px 60px 30px;
+}
+
+.startnow {
+    width: 250px;
+    height: 70px;
+    margin: 32px;
+    box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    text-transform: none;
+    background-size: contain;
+    background-color: #30b06e;
+    background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+}
+
+
+.center-image {
+    display: block;
+    align-self: center;
+}
+
+.image-div {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+.work-image {
+    width: 70px;
+    height: 70px;
+}
+
+.work-image-background {
+    width: 120px;
+    height: 120px;
+    padding: 25px;
+    border-radius: 100%;
+    background-color: #ff5400
+
+}
+
+.jss412 {
+    font-family: roboto;
+    color: #16191f;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.work-p {
+    font-size: 12px;
+    text-align: center;
+    font-family: roboto;
+}
+
+/*customer section*/
+.customer-love {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.customer-love-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.customer-love-p {
+    color: #4d4d4d;
+    font-family: roboto condensed;
+    font-weight: 600;
+}
+
+.customer-p {
+    color: #4d4d4d;
+    margin: 2px auto;
+    font-size: 0.8rem;
+    font-family: roboto condensed
+}
+
+/*end of customer*/
+
+/*brands*/
+.brands {
+    width: 100%;
+}
+
+.brnds-image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #050E44;
+    height: 12vh;
+}
+
+.jss428 {
+    width: 60%;
+    height: auto;
+}
+
+.img-pro {
+    justify-content: center;
+    flex-basis: 25%
+}
+
+/*end of brand*/
+/*banking-partner*/
+
+.brand-images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.jss466 {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+}
+
+.bankpartnerBox {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/*end of banking-partner*/
+
+
+/*navbar*/
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9));
+    padding: 15px;
+    transition: all .5s;
+}
+
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+}
+
+.nav-active {
+    color: blue;
+}
+
+.img-size1 {
+    width: 60px;
+}
+
+.menu-item:hover {
+    /*color: #70aed2;*/
+    color: blue;
+    transition: color .5s;
+}
+
+.line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custome-navebar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+/*end of home*/
+@media screen and (max-width: 700px) {
+    .AboutusBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*gap: 20px;*/
+    }
+
+    .contact-us-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*gap: 20px;*/
+    }
+
+    .container-work {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .work-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        background: white;
+        border-radius: 20px;
+        padding: 60px 30px 60px 30px;
+    }
+
+    .customer-love {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .customer-love-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .brand-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .customer-love{
+        padding: 10px;
+    }
+    .customer-love-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home-Loan</title>
     <?php include 'headerfiles.php' ?>
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body style="background: #FFFFFF">
 
@@ -23,7 +24,7 @@
                 <form action="home-loan.php">
                     <div class="jss246 jss245">
                         <!--                        <div class="input-group bg-white">-->
-                        <span class="input-group-addon" style="padding: 7px">i am looking for</span>
+                        <span class="input-group-addon font-weight-bold" style="padding: 7px">i am looking for</span>
                         <select name="loan" id="loan" class="form-control">
                             <option>Instant Personal Loan</option>
                             <option>Personal Loan</option>
@@ -31,7 +32,7 @@
                             <option>Home lone</option>
                             <option>Business lone</option>
                         </select>
-                        <span class="input-group-addon" style="padding: 7px">For (₹) * 10 Lakh</span>
+                        <span class="input-group-addon font-weight-bold" style="padding: 7px">For (₹) * 10 Lakh</span>
                         <input type="number" name="amount" id="amount" class="form-control" value="100000">
                         <div class="input-group-btn text-center">
                             <input type="submit" class="btn jss260" value="search">
@@ -249,6 +250,76 @@
 </section>
 
 <section class="brands pt-5 pb-3">
+    <div class="getintouch">
+        <div class="getWraper">
+            <div class="getWraper-left">
+                <div class="text-center ">
+                    <h5 class="text-white">Unable to Decide? Get in Touch with Us </h5>
+                    <h6 class="text-white"><a class="text-white" href="">query@financebuddha.org</a></h6>
+                </div>
+                <form action="emailsend/getintouch.php" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-row border-input">
+                                    <label for="name" class="text-white">Name*</label>
+                                    <input type="text" id="name" name="name" required
+                                           class="input-1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-row border-input">
+                                    <label for="email" class="text-white">Email Id*</label>
+                                    <input type="email" id="email" name="email" required
+                                           class="input-1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-row border-input">
+                                    <label for="mobile" class="text-white">Mobile No*</label>
+                                    <input type="text" id="mobile" name="mobile" required
+                                           class="input-1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-row border-input">
+                                    <label for="city" class="text-white">City (India)*</label>
+                                    <input type="text" id="city" name="city" required
+                                           class="input-1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center form-group pt-2">
+                        <button class="btn jss452 text-white">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="getWraper-right">
+                <div>
+                    <h5 class="text-white">Learn How to Manage Your Money to Retire Wealthy!</h5>
+                    <form action="emailsend/subscribe.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" style="height: 60px" name="email" id="email"
+                                   required placeholder="Email Id*">
+                        </div>
+                        <div class="text-center">
+                            <button class="btn jss452 text-white">Subscibe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="brnds-image">
         <div class="img-pro">
             <img class="jss428" src="images/theEconomeTime.png" alt="">
@@ -330,6 +401,41 @@
     </div>
 </section>
 
+<div class="modal" id="emailsent" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title">Modal title</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+            <div class="modal-body">
+                <p>Thank you  <i class="fas fa-check-circle text-success"></i></p>
+            </div>
+            <div class="modal-footer">
+                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+                <button type="button" class="btn close" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <?php include 'footer.php' ?>
+
+<?php
+if (isset($_GET['getintouch']) or isset($_GET['subscibe'])) {
+    if ($_GET['getintouch'] == 1 or $_GET['subscibe'] == 1) {
+        ?>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#emailsent').modal('show');
+            });
+        </script>
+        <?php
+    }
+}
+?>
 </body>
 </html>

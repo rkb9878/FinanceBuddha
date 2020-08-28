@@ -2,11 +2,10 @@
 //session_start();
 require_once('class.phpmailer.php');
 // include "connection.php";
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['comment'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
 $adminemail = "python.vmm.2020@gmail.com";
 date_default_timezone_set("Asia/Kolkata");
@@ -21,11 +20,11 @@ $msg = "<style>a
     padding:0px !important;
     }</style>
     <h2 style='text-align:center;background-color: #ff914d; color: white;padding: 10px 0px;'>
-   New Enquiry From <small style='color: white;text-decoration:none;'>http://financebuddha.org/</small></h2><h3 style='text-align:left;color: black'>Dear Team JBK Services</h3> 
+   New Enquiry From <small style='color: white;text-decoration:none;'>http://financebuddha.org/</small></h2><h3 style='text-align:left;color: black'>Dear Team financebuddha.org</h3> 
    <p style='text-align:left;color: black'>Congratulations you have received a new Enquiry from your website <span style='color: black;text-decoration:none;'>http://financebuddha.org/</span> , we recommend you to kindly get in touch with the client with next 24 working hours</p>
-<p ><strong style='text-align:left;color: black'>Name : " . $firstname . ' ' . $lastname . "</strong></p>
+<p ><strong style='text-align:left;color: black'>Name : " . $name . "</strong></p>
 <p><strong style='text-align:left;color: black'>Email : " . $email . "</strong></p>
-<p><strong style='text-align:left;color: black'>subject :".$subject." </strong></p>
+<p><strong style='text-align:left;color: black'>Mobile :".$phone." </strong></p>
 <p style='text-align:left;color: black'><strong>Message: </strong>" . $message . "</p>
 <p style='text-align:left;color: black'><strong>Extra Info: </strong>" . $currentdateTime . "</p>
 <h3 style='text-align:left;color: black'>Thanks & Regards</h3>

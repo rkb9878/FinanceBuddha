@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="text-white font-weight-bold">
+    <div class="text-white">
         <p>Copyright © 2020 Finance Buddha</p>
     </div>
 </footer>

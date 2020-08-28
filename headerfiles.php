@@ -1,3 +1,4 @@
+<link rel="icon" type="image/png" href="images/favicon.ico"/>
 <link rel="stylesheet" href="bootstrap-4.5.1-dist/css/bootstrap.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"/>

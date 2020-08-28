@@ -10,6 +10,9 @@
     <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="mynavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
+                <a href="index.php" class="nav-link m-2 menu-item">Home</a>
+            </li>
+            <li class="nav-item">
                 <a href="about-us.php" class="nav-link m-2 menu-item">About Us</a>
             </li>
             <li class="nav-item">

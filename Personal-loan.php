@@ -63,7 +63,7 @@
                 <td><p>Up to
                     2.50% + GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/icici.png">
@@ -82,7 +82,7 @@
                     2.25% + GST as applicable</p></td>
                 <td>
                     <input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/axis.png">
@@ -100,7 +100,7 @@
                 <td><p>1.50%
                     to 2.00% + GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/kotak.png">
@@ -120,7 +120,7 @@
                 <td>
 
                     <input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/citi.png">
@@ -138,7 +138,7 @@
                 <td><p>2.00% -
                     3.00% + GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/bajajfinserv.png">
@@ -156,7 +156,7 @@
                 <td><p>Up to
                     3.99% + GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/scb.png">
@@ -176,7 +176,7 @@
                 <td>
 
                     <input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/indusind.png">
@@ -194,7 +194,7 @@
                 <td><p>Up to
                     2.50% + GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply></a></td>
+                <td><a class="jss1193" href="#">Apply></a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/tatacapital.png">
@@ -212,7 +212,7 @@
                 <td><p>1.50%
                     to 2.00% + GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             <tr>
                 <td><img src="https://ds9hznk0d46ns.cloudfront.net/web/img/banks/logos/capitalfirst.png">
@@ -230,7 +230,7 @@
                 <td><p>1.99% +
                     GST as applicable</p></td>
                 <td><input type="checkbox" value="" checked=""></td>
-                <td><a href="#">Apply</a></td>
+                <td><a class="jss1193" href="#">Apply</a></td>
             </tr>
             </tbody>
         </table>
@@ -276,10 +276,10 @@
                 <!--        pannel -->
                 <div class="mb-5">
                     <div class="heading-pannel">
-                        <h4 class="heading-h5">Business Loan Details</h4>
+                        <h4 class="heading-h5">Personal Loan Details</h4>
                     </div>
                     <div class="accordion" id="accordionExample">
-                        <div class="card bg-white" id="Business-Loans-in-India" style="cursor:pointer;">
+                        <div class="card bg-white" id="loan1" style="cursor:pointer;">
                             <div class="card-header bg-white" data-toggle="collapse"
                                  data-target="#collapseOne">
                                 <div class="card-head-columns">
@@ -317,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-white" id="Purposes-of-a-Business-Loan" style="cursor:pointer;">
+                        <div class="card bg-white" id="loan2" style="cursor:pointer;">
                             <div class="card-header bg-white" class="btn btn-link" data-toggle="collapse"
                                  data-target="#collapseTwo">
                                 <div class="card-head-columns">
@@ -384,7 +384,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-white" id="Types-of-Business-Loans" style="cursor:pointer;">
+                        <div class="card bg-white" id="loan3" style="cursor:pointer;">
                             <div class="card-header bg-white" class="btn btn-link" data-toggle="collapse"
                                  data-target="#collapse3">
                                 <div class="card-head-columns">
@@ -1343,7 +1343,7 @@
                             </div>
                         </div>
                         <div class="card bg-white" id="loan14" style="cursor:pointer;">
-                            <div class="card-header bg-white" class="btn btn-link" data-toggle="collapse"
+                            <div class="card-header bg-white"  data-toggle="collapse"
                                  data-target="#collapse14">
                                 <div class="card-head-columns">
                                     <div class="card-head-columns-left">
@@ -1681,48 +1681,41 @@
                 </div>
             </div>
             <div class="col-sm-4 offset-sm-1 ">
-                <div class="bg-white p-4">
+                <div class="bg-white p-4 " style="margin-top: 15px">
                     <h5 class="heading-h5">On this Page:</h5>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#Business-Loans-in-India">Business Loans
-                        in India</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan1">Your Search for Personal Loans Ends Here!</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#Purposes-of-a-Business-Loan">Purposes of
-                        a Business Loan</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan2">How do Personal Loans work?</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#Types-of-Business-Loans">Types of
-                        Business Loans</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan3">Choiceworthy Benefits of a Personal Loan</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan4">Different Business Loans You can
-                        get in India</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan4">Features of a Personal Loan</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan5">Features of Business Loans</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan5">Types of Personal Loans in India</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan6">Benefits of Business Loan</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan6">An Overview of Personal Loan Process</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan7">Business Loan Requirements</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan7">Best Personal Loans in India</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan8">Top Business Loan Providers in
-                        India</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan8">Best Banks for Personal Loans</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan10">Pre-requisites of a Business
-                        Loan</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan10">Best NBFCs for Personal Loans</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan11">How to Select the Right Business
-                        Loan?</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan11">Picking the Best Personal Loan Offer</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan12">How to Get Business Loan
-                        Online? </a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan12">Finance Buddha Now Offers Online Personal Loans in India!</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan13">How to Apply For Business Loan
-                        Online at Finance Buddha?</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan13">PPI with a Personal Loan</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan14">Why Apply for a Business Loan
-                        Online with Finance Buddha?</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan14">Peer to Peer (P2P) Personal Loans</a>
                     <hr class="aBorder">
-                    <a class="onthisPage" style="text-decoration: none" href="#loan15">Do’s & Don’ts of Business
-                        Loan</a>
+                    <a class="onthisPage" style="text-decoration: none" href="#loan15">Personal Loan for Self Employed</a>
                     <hr class="aBorder">
+                    <a class="onthisPage" style="text-decoration: none" href="#loan16">Personal Loan for Unemployed</a>
+                    <hr class="aBorder">
+<!--                    <a class="onthisPage" style="text-decoration: none" href="#loan17">Personal Loan vs. Credit Card</a>-->
+<!--                    <hr class="aBorder">-->
                 </div>
 
             </div>

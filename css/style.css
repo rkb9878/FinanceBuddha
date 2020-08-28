@@ -517,6 +517,7 @@ ol > li::before {
 }
 
 .menu-item {
+    font-family: "Helvetica", "Arial", sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
     color: #eee;
@@ -624,6 +625,18 @@ header {
     padding: 0.57rem;
     font-size: 0.8rem;
     border-radius: 0 8px 8px 0;
+    background-size: contain;
+    background-color: #30b06e;
+    background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+}
+
+.jss1193 {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 16px;
+    text-transform: none;
     background-size: contain;
     background-color: #30b06e;
     background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
@@ -750,7 +763,7 @@ header {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
     header {
         /*height: 100vh;*/
         background: linear-gradient(to bottom right, rgba(44, 44, 170, .6) 0%, rgba(255, 255, 255, .7) 100%), url("../images/loan_banner.jpg") no-repeat center center/cover;

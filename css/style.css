@@ -443,12 +443,56 @@ ol > li::before {
 
 /*end of brand*/
 /*banking-partner*/
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+.p5 {
+    grid-area: p5;
+}
+
+.p6 {
+    grid-area: p6;
+}
+
+.p7 {
+    grid-area: p7;
+}
+
+.p8 {
+    grid-area: p8;
+}
+
+.p9 {
+    grid-area: p9;
+}
+
+.p10 {
+    grid-area: p10;
+}
 
 .brand-images {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
     gap: 10px;
+    grid-template-areas:
+    'p1 p2 p3 p4 p5 p6'
+    '. p7 p8 p9 p10 .';
 }
+
 
 .jss466 {
     width: 100%;
@@ -585,6 +629,10 @@ header {
     background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
 }
 
+.text-alians {
+    /*text-align: center !important;*/
+}
+
 
 /*end of header*/
 
@@ -600,10 +648,11 @@ header {
         background: linear-gradient(to bottom right, rgba(44, 44, 170, .6) 0%, rgba(255, 255, 255, .7) 100%), url("../images/loan_banner.jpg") no-repeat center center/cover;
     }
 
+
     .jss245 {
         display: grid;
         font-size: 0.8rem;
-        background: rgba(255, 255, 255,0);
+        background: rgba(255, 255, 255, 0);
         align-items: center;
         border-radius: 8px;
         /*grid-template-rows: 40px;*/
@@ -622,6 +671,10 @@ header {
         background-size: contain;
         background-color: #30b06e;
         background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+    }
+
+    .text-alians {
+        text-align: center !important;
     }
 
     .header-container-right {
@@ -681,6 +734,20 @@ header {
         gap: 10px;
 
     }
+
+
+    .brand-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas:
+    'p1 p2'
+    'p3 p4'
+    'p5 p6'
+    'p7 p8'
+    'p9 p10';
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -692,12 +759,17 @@ header {
     .jss245 {
         display: grid;
         font-size: 0.8rem;
-        background: rgba(255, 255, 255,0);
+        background: rgba(255, 255, 255, 0);
         align-items: center;
         border-radius: 8px;
         /*grid-template-rows: 40px;*/
         grid-template-columns: 1fr;
     }
+
+    .text-alians {
+        text-align: center !important;
+    }
+
 
     .jss260 {
 
@@ -717,7 +789,6 @@ header {
     .header-container-right {
         display: none;
     }
-
 
 
     .customer-love {

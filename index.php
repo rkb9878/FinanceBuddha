@@ -45,22 +45,22 @@
                 <div>
                     <a href="home-loan.php" class="">
                         <button class="btn header-button"><i class="fa-2x fas  fa-home"></i><b style="font-size: 18px">
-                            &nbsp;&nbsp;Home Loan</b>
+                                &nbsp;&nbsp;Home Loan</b>
                         </button>
                     </a>
                 </div>
                 <div>
                     <a href="Personal-loan.php">
                         <button class="btn header-button"><i class="fa-2x fas fa-wallet"></i><b style="font-size: 18px">
-                            &nbsp; Personal
-                            Loan</b></button>
+                                &nbsp; Personal
+                                Loan</b></button>
                     </a>
                 </div>
                 <div>
                     <a href="business-loan.php">
                         <button class="btn header-button"><i class="fa-2x fas fa-briefcase"></i><b
-                                style="font-size: 18px"> Business
-                            Loan</b></button>
+                                    style="font-size: 18px"> Business
+                                Loan</b></button>
                     </a>
                 </div>
             </div>
@@ -130,7 +130,7 @@
         </div>
     </div>
     <div class="text-center" style="margin-top: 80px">
-        <button href="#" class="btn startnow">Start Now</button>
+        <button href="#" class="btn font-weight-bold text-white startnow">Start Now</button>
     </div>
 </section>
 
@@ -142,94 +142,108 @@
     <div class="customer-love-box">
         <div id="customer-love-box1">
             <img src="images/custlove/instaloan.png" width="100%" alt="">
-            <p style="margin: 0" class="customer-love-p">INSTA LOAN</p>
-            <div>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span class="font-weight-bold">5(1)</span>
+            <div class="text-alians ">
+                <p style="margin: 0" class="customer-love-p">INSTA LOAN</p>
+                <div>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span class="font-weight-bold">5(1)</span>
+                </div>
+                <div class="customer-p">100% Paperless Loan</div>
+                <div class="customer-p">Instant eApproval</div>
+                <div class="customer-p"><b>24 Hours</b> Disbursal</div>
             </div>
-            <div class="customer-p">100% Paperless Loan</div>
-            <div class="customer-p">Instant eApproval</div>
-            <div class="customer-p"><b>24 Hours</b> Disbursal</div>
         </div>
         <div id="customer-love-box2">
             <img src="images/custlove/hdfc%20personal%20loan.png" width="100%" alt="">
-            <p style="margin: 0" class="customer-love-p">HDFC PERSONAL LOAN</p>
-            <div>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span class="font-weight-bold">2(1)</span>
+            <div class="text-alians ">
+                <p style="margin: 0" class="customer-love-p">HDFC PERSONAL LOAN</p>
+
+                <div>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span class="font-weight-bold">2(1)</span>
+                </div>
+                <div class="customer-p">Interest Rates starting @15.5%</div>
+                <div class="customer-p">Minimal Documentation</div>
+                <div class="customer-p">Up to <b>5 Years</b> Tenure</div>
             </div>
-            <div class="customer-p">Interest Rates starting @15.5%</div>
-            <div class="customer-p">Minimal Documentation</div>
-            <div class="customer-p">Up to <b>5 Years</b> Tenure</div>
         </div>
         <div id="customer-love-box3">
             <img src="images/custlove/personal%20line%20of%20credit.png" width="100%" alt="">
-            <p style="margin: 0" class="customer-love-p">PERSONAL LINE OF CREDIT</p>
-            <div>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span class="font-weight-bold">5(1)</span>
+            <div class="text-alians ">
+                <p style="margin: 0" class="customer-love-p">PERSONAL LINE OF CREDIT</p>
+                <div>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span class="font-weight-bold">5(1)</span>
+                </div>
+                <div class="customer-p">Credit Line up to ₹500,000</div>
+                <div class="customer-p">Pay Only for Used Amount</div>
+                <div class="customer-p">3 Step Application</div>
             </div>
-            <div class="customer-p">Credit Line up to ₹500,000</div>
-            <div class="customer-p">Pay Only for Used Amount</div>
-            <div class="customer-p">3 Step Application</div>
         </div>
         <div id="customer-love-box4">
             <img src="images/custlove/sbi%20home%20loan.png" width="100%" alt="">
-            <p style="margin: 0" class="customer-love-p">SBI HOME LOAN</p>
-            <div>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span class="font-weight-bold">2(1)</span>
+            <div class="text-alians ">
+                <p style="margin: 0" class="customer-love-p">SBI HOME LOAN</p>
+                <div>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span class="font-weight-bold">2(1)</span>
+                </div>
+
+                <div class="customer-p">Interest Rates starting @9.10%</div>
+                <div class="customer-p">Quick Processing</div>
+                <div class="customer-p"><b>30 Years</b> Tenure</div>
             </div>
-            <div class="customer-p">Interest Rates starting @9.10%</div>
-            <div class="customer-p">Quick Processing</div>
-            <div class="customer-p"><b>30 Years</b> Tenure</div>
         </div>
         <div id="customer-love-box5">
             <img src="images/custlove/hdfc%20home%20loan.png" width="100%" alt="">
-            <p style="margin: 0" class="customer-love-p">HDFC HOME LOAN</p>
-            <div>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span class="font-weight-bold">2(1)</span>
+            <div class="text-alians ">
+                <p style="margin: 0" class="customer-love-p">HDFC HOME LOAN</p>
+                <div>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span class="font-weight-bold">2(1)</span>
+                </div>
+                <div class="customer-p">Interest Rates starting @8.8%</div>
+                <div class="customer-p">0 Prepayment Charges</div>
+                <div class="customer-p"><b>30 Years</b> Tenure</div>
             </div>
-            <div class="customer-p">Interest Rates starting @8.8%</div>
-            <div class="customer-p">0 Prepayment Charges</div>
-            <div class="customer-p"><b>30 Years</b> Tenure</div>
         </div>
 
         <div id="customer-love-box6">
             <img src="images/custlove/hdfc%20business%20loan.png" width="100%" alt="">
-            <p style="margin: 0" class="customer-love-p">HDFC BUSINESS LOAN</p>
-            <div>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
-                <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
-                <span class="font-weight-bold">4(1)</span>
+            <div class="text-alians ">
+                <p style="margin: 0" class="customer-love-p">HDFC BUSINESS LOAN</p>
+                <div>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="fa fa-star text-warning star-border"></span>
+                    <span style="font-size: 15px" class="far fa-star text-warning star-border"></span>
+                    <span class="font-weight-bold">4(1)</span>
+                </div>
+                <div class="customer-p">Interest Rates starting @15.65%</div>
+                <div class="customer-p">Borrow up to ₹ 5,000,000</div>
+                <div class="customer-p"><b>4 Years</b> Tenure</div>
             </div>
-            <div class="customer-p">Interest Rates starting @15.65%</div>
-            <div class="customer-p">Borrow up to ₹ 5,000,000</div>
-            <div class="customer-p"><b>4 Years</b> Tenure</div>
         </div>
     </div>
 </section>
@@ -281,44 +295,41 @@
         <h2 class="heading-h2" style="font-weight: 300">Banking Partners</h2>
     </div>
     <div class="brand-images">
-        <div class="bankpartnerBox">
-            <img class="jss466" src="images/bank/icici.png" alt="">
+        <div class=" p1">
+            <div class="bankpartnerBox">
+                <img class="jss466" src="images/bank/icici.png" alt="">
+            </div>
         </div>
-        <div class="bankpartnerBox">
+        <div class="bankpartnerBox p2">
             <img class="jss466" src="images/bank/hdfc.png" alt="">
         </div>
-        <div class="bankpartnerBox">
+        <div class="bankpartnerBox p3">
             <img class="jss466" src="images/bank/indusind.png" alt="">
         </div>
-        <div class=" bankpartnerBox">
+        <div class=" bankpartnerBox p4">
             <img class="jss466" src="images/bank/axis.png" alt="">
         </div>
-        <div class=" bankpartnerBox">
+        <div class=" bankpartnerBox p5">
             <img class="jss466" src="images/bank/bajaj.png" alt="">
         </div>
-        <div class=" bankpartnerBox">
+        <div class=" bankpartnerBox p6">
             <img class="jss466" src="images/bank/tata.png" alt="">
         </div>
-    </div>
-    <br>
-    <div class="brand-images">
-        <div class=""></div>
-        <div class="bankpartnerBox">
+        <div class="bankpartnerBox p7">
             <img class="jss466" src="images/bank/kotak.png" alt="">
         </div>
-        <div class="bankpartnerBox">
+        <div class="bankpartnerBox p8">
             <img class="jss466" src="images/bank/dhfl.png" alt="">
         </div>
-        <div class=" bankpartnerBox">
+        <div class=" bankpartnerBox p9">
             <img class="jss466" src="images/bank/pnb.png" alt="">
         </div>
-        <div class=" bankpartnerBox">
+        <div class=" bankpartnerBox p10">
             <img class="jss466" src="images/bank/capital-first.png" alt="">
         </div>
-        <div class=""></div>
     </div>
 </section>
 
-<?php include 'footer.php'?>
+<?php include 'footer.php' ?>
 </body>
 </html>

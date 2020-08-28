@@ -1680,7 +1680,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 offset-1 ">
+            <div class="col-sm-4 offset-sm-1 ">
                 <div class="bg-white p-4">
                     <h5 class="heading-h5">On this Page:</h5>
                     <hr class="aBorder">

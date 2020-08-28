@@ -19,7 +19,7 @@
                     <h6 class="text-white " style="text-decoration: underline">Quick Link</h6>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-6">
                         <ul style="list-style-type: none;text-align: left;color: white">
                             <li><a style="font-size: 12px" class="text-white" href="index.php">Home</a></li>
                             <li><a style="font-size: 12px" class="text-white" href="home-loan.php">Home Loan</a></li>
@@ -29,7 +29,7 @@
                                     Loan</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-6">
                         <ul style="list-style-type: none;text-align: left;color: white">
                             <li><a style="font-size: 12px" class="text-white" href="about-us.php">About Us</a></li>
                             <li><a style="font-size: 12px" class="text-white" href="contact-us.php">Contact Us</a></li>

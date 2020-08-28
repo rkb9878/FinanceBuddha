@@ -1,3 +1,50 @@
+body, html {
+    height: 100%;
+    font-family: Oswald-Regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+    font-family: Oswald-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: blue;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: Oswald-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: whitesmoke;
+    margin: 0px;
+}
+
+ul, li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+
+
 .getintouch {
     width: 100%;
     /*height: 50vh;*/
@@ -30,11 +77,11 @@
 .input-1000{
     width: 70%;
     background: transparent;
-    border: transparent;
+    border: none;
     /*border-bottom: 1px solid white !important;*/
 }
 .input:focus{
-    border: transparent;
+    border: none;
     /*border-bottom: 1px solid white !important;*/
 }
 

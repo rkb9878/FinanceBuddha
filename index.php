@@ -73,6 +73,7 @@
     <div class="text-center">
         <h2 class="heading-h2" style="font-weight: 300">HOW IT WORKS</h2>
     </div>
+    <br>
     <div class="work-box work-box-shadow">
         <div class="work-box-content ">
             <div class="image-div">
@@ -140,6 +141,7 @@
         <h2 class="heading-h2" style="font-weight: 300;margin-bottom: 0">HOW IT WORKS</h2>
         <p style="margin-top: 3px">Our picks for the hottest offers and coolest deals all in one place</p>
     </div>
+    <br>
     <div class="customer-love-box">
         <div id="customer-love-box1">
             <img src="images/custlove/instaloan.png" width="100%" alt="">
@@ -305,16 +307,23 @@
                 </form>
             </div>
             <div class="getWraper-right">
-                <div>
-                    <h5 class="text-white">Learn How to Manage Your Money to Retire Wealthy!</h5>
+                <!--                <div>-->
+                <!--                    <h5 class="text-white">Learn How to Manage Your Money to Retire Wealthy!</h5>-->
+                <!--                    <form action="emailsend/subscribe.php" method="post">-->
+                <!--                        <div class="form-group">-->
+                <!--                            <input type="text" class="form-control" style="height: 60px" name="email" id="email"-->
+                <!--                                   required placeholder="Email Id*">-->
+                <!--                        </div>-->
+                <!--                        <div class="text-center">-->
+                <!--                            <button class="btn jss452 text-white">Subscibe</button>-->
+                <!--                        </div>-->
+                <!--                    </form>-->
+                <!--                </div>-->
+                <div class="subscribe-wrapper">
+                    <h4>SUBSCRIBE</h4>
                     <form action="emailsend/subscribe.php" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" style="height: 60px" name="email" id="email"
-                                   required placeholder="Email Id*">
-                        </div>
-                        <div class="text-center">
-                            <button class="btn jss452 text-white">Subscibe</button>
-                        </div>
+                        <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+                        <div class="submit-btn">SUBMIT</div>
                     </form>
                 </div>
             </div>
@@ -404,14 +413,14 @@
 <div class="modal" id="emailsent" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-<!--            <div class="modal-header">-->
-<!--                <h5 class="modal-title">Modal title</h5>-->
-<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                    <span aria-hidden="true">&times;</span>-->
-<!--                </button>-->
-<!--            </div>-->
+            <!--            <div class="modal-header">-->
+            <!--                <h5 class="modal-title">Modal title</h5>-->
+            <!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+            <!--                    <span aria-hidden="true">&times;</span>-->
+            <!--                </button>-->
+            <!--            </div>-->
             <div class="modal-body">
-                <p>Thank you  <i class="fas fa-check-circle text-success"></i></p>
+                <p>Thank you <i class="fas fa-check-circle text-success"></i></p>
             </div>
             <div class="modal-footer">
                 <!--                <button type="button" class="btn btn-primary">Save changes</button>-->

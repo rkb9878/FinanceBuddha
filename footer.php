@@ -15,7 +15,7 @@
                 </p>
             </div>
             <div class="col-sm-6">
-                <div class="text-left">
+                <div class="text-left text-center ">
                     <h6 class="text-white " style="text-decoration: underline">Quick Link</h6>
                 </div>
                 <div class="row">
@@ -46,6 +46,7 @@
                     <div class="text-center">
                         <h4 class="text-white font-weight-bold">Follow Us</h4>
                     </div>
+                    <br>
                     <div class="social-icon">
                         <div class=" text-center">
                             <a href="#"><i class="fa-2x fab fa-facebook"></i></a>

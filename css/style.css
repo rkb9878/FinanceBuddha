@@ -26,7 +26,7 @@ body {
     margin: 24px auto;
     font-size: 2.5rem;
     text-align: center;
-    font-family: roboto condensed;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .heading-h6 {
@@ -39,7 +39,7 @@ body {
 
 .heading-h5 {
     font-size: 1.6rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.33;
     letter-spacing: 0em;
     font-weight: 600
@@ -140,7 +140,7 @@ p {
     font-size: 2rem;
     margin-top: 24px;
     text-align: center;
-    font-family: roboto condensed;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 600;
     margin-bottom: 24px;
 }
@@ -241,7 +241,7 @@ p {
 #accordionExample .accordionBtn:before,
 #accordionExample .accordionBtn.collapsed:before {
     content: "\f067";
-    font-family: "Font Awesome 5 Free";
+    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 900;
     width: 25px;
     height: 25px;
@@ -301,7 +301,7 @@ ol > li::before {
     line-height: 1.5;
     letter-spacing: 0.00938em;
     cursor: pointer;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
     color: black;
 }
 
@@ -378,7 +378,7 @@ ol > li::before {
 }
 
 .jss412 {
-    font-family: roboto;
+    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
     color: #16191f;
     text-align: center;
     text-transform: uppercase;
@@ -386,9 +386,10 @@ ol > li::before {
 }
 
 .work-p {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 100 !important;
     text-align: center;
-    font-family: roboto;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 /*customer section*/
@@ -406,15 +407,15 @@ ol > li::before {
 
 .customer-love-p {
     color: #4d4d4d;
-    font-family: roboto condensed;
+    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 600;
 }
 
 .customer-p {
     color: #4d4d4d;
     margin: 2px auto;
-    font-size: 0.8rem;
-    font-family: roboto condensed
+    font-size: 0.9rem;
+    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 /*end of customer*/
@@ -517,7 +518,7 @@ ol > li::before {
 }
 
 .menu-item {
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
     color: #eee;
@@ -643,7 +644,7 @@ header {
 }
 
 .text-alians {
-    /*text-align: center !important;*/
+    text-align: center !important;
 }
 
 
@@ -812,5 +813,7 @@ header {
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+        margin-left:17px ;
+        margin-right:22px ;
     }
 }

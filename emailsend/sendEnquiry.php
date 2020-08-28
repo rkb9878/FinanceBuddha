@@ -22,7 +22,7 @@ $msg = "<style>a
     }</style>
     <h2 style='text-align:center;background-color: #ff914d; color: white;padding: 10px 0px;'>
    New Enquiry From <small style='color: white;text-decoration:none;'>http://financebuddha.org/</small></h2><h3 style='text-align:left;color: black'>Dear Team JBK Services</h3> 
-   <p style='text-align:left;color: black'>Congratulations you have received a new Enquiry from your website <span style='color: black;text-decoration:none;'>jbkservices.com.au</span> , we recommend you to kindly get in touch with the client with next 24 working hours</p>
+   <p style='text-align:left;color: black'>Congratulations you have received a new Enquiry from your website <span style='color: black;text-decoration:none;'>http://financebuddha.org/</span> , we recommend you to kindly get in touch with the client with next 24 working hours</p>
 <p ><strong style='text-align:left;color: black'>Name : " . $firstname . ' ' . $lastname . "</strong></p>
 <p><strong style='text-align:left;color: black'>Email : " . $email . "</strong></p>
 <p><strong style='text-align:left;color: black'>subject :".$subject." </strong></p>

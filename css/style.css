@@ -562,6 +562,7 @@ header {
 .jss246 {
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
 }
+
 .jss245 {
     display: grid;
     font-size: 0.8rem;
@@ -571,6 +572,7 @@ header {
     grid-template-rows: 40px;
     grid-template-columns: 16% 29% 16% 25% 14%;
 }
+
 .jss260 {
     color: white;
     height: 100%;
@@ -593,6 +595,40 @@ header {
 }
 
 @media screen and (max-width: 700px) {
+    header {
+        /*height: 100vh;*/
+        background: linear-gradient(to bottom right, rgba(44, 44, 170, .6) 0%, rgba(255, 255, 255, .7) 100%), url("../images/loan_banner.jpg") no-repeat center center/cover;
+    }
+
+    .jss245 {
+        display: grid;
+        font-size: 0.8rem;
+        background: rgba(255, 255, 255,0);
+        align-items: center;
+        border-radius: 8px;
+        /*grid-template-rows: 40px;*/
+        grid-template-columns: 1fr;
+    }
+
+    .jss260 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+        height: 100%;
+        width: 104px;
+        padding: 0.57rem;
+        font-size: 0.8rem;
+        border-radius: 8px 8px 8px 8px;
+        background-size: contain;
+        background-color: #30b06e;
+        background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+    }
+
+    .header-container-right {
+        display: none;
+    }
+
+
     .AboutusBox {
         display: grid;
         grid-template-columns: 1fr;
@@ -648,6 +684,42 @@ header {
 }
 
 @media screen and (max-width: 700px) {
+    header {
+        /*height: 100vh;*/
+        background: linear-gradient(to bottom right, rgba(44, 44, 170, .6) 0%, rgba(255, 255, 255, .7) 100%), url("../images/loan_banner.jpg") no-repeat center center/cover;
+    }
+
+    .jss245 {
+        display: grid;
+        font-size: 0.8rem;
+        background: rgba(255, 255, 255,0);
+        align-items: center;
+        border-radius: 8px;
+        /*grid-template-rows: 40px;*/
+        grid-template-columns: 1fr;
+    }
+
+    .jss260 {
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+        height: 100%;
+        width: 104px;
+        padding: 0.57rem;
+        font-size: 0.8rem;
+        border-radius: 8px 8px 8px 8px;
+        background-size: contain;
+        background-color: #30b06e;
+        background-image: url(https://ds9hznk0d46ns.cloudfront.net/web/img/background/gradient-bg.png);
+    }
+
+    .header-container-right {
+        display: none;
+    }
+
+
+
     .customer-love {
         padding: 10px;
     }

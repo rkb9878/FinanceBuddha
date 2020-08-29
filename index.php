@@ -462,6 +462,7 @@
 </script>
 
 
+
 <?php
 //if (isset($_GET['getintouch']) or isset($_GET['subscibe']) or isset($_GET['loanApply'])) {
 //    if ($_GET['getintouch'] == 1 or $_GET['subscibe'] == 1 or $_GET['loanApply']) {

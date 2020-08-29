@@ -1,8 +1,23 @@
 <?php
 //session_start();
+include '../database/database.php';
 require_once('class.phpmailer.php');
 // include "connection.php";
 $email = $_POST['email'];
+
+
+//database connection work
+
+$query="INSERT INTO `subscribe`(`email`) VALUES ('$email')";
+if (mysqli_query($conn,$query)){
+//    echo "done";
+}
+else{
+    echo "Error: " . $query . "<br>" . mysqli_error($conn);
+}
+//end of database connection work
+
+
 
 $adminemail = "python.vmm.2020@gmail.com";
 date_default_timezone_set("Asia/Kolkata");
@@ -58,7 +73,7 @@ $mail->AddAddress($address);
 if (!$mail->Send()) {
     echo "No";
 } else {
-    header("Location: ../index.php?subscibe=1");
+    header("Location: ../thankyou.php?d=Subscribe");
 }
 
 

@@ -1,16 +1,35 @@
 <?php
 //session_start();
+
+include '../database/database.php';
 require_once('class.phpmailer.php');
-// include "connection.php";
+
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
+
+//database connection work
+
+$query="INSERT INTO `contact`(`name`, `email`, `phone`, `msg`) VALUES ('$name','$email','$phone','$message')";
+if (mysqli_query($conn,$query)){
+//    echo "done";
+}
+else{
+    echo "Error: " . $query . "<br>" . mysqli_error($conn);
+}
+//end of database connection work
+
+
+
 $adminemail = "python.vmm.2020@gmail.com";
 date_default_timezone_set("Asia/Kolkata");
 $currentdateTime = date("l jS \of F Y h:i:s A");
-//if ($captcha == $_SESSION["captcha"]) {
+
+
+
 $msg = "<style>a
     {
     text-decoration:none !important;color:black !important;
@@ -55,19 +74,13 @@ $mail->AltBody = "To view the message, please use an HTML compatible email viewe
 
 $mail->MsgHTML($msg);
 
-// $address = "jbkservices@hotmail.com";
+
 $address = 'rkb9878@gmail.com';
 $mail->AddAddress($address);
 
 if (!$mail->Send()) {
     echo "No";
 } else {
-    header("Location: ../contact-us.php?count=1");
+    header("Location: ../thankyou.php?d=contact");
 }
 
-
-
-//
-//} else {
-//    echo "Invalid Captcha";
-//}

@@ -463,18 +463,18 @@
 
 
 <?php
-if (isset($_GET['getintouch']) or isset($_GET['subscibe']) or isset($_GET['loanApply'])) {
-    if ($_GET['getintouch'] == 1 or $_GET['subscibe'] == 1 or $_GET['loanApply']) {
-        ?>
-        <script type="text/javascript">
-            $(window).on('load', function () {
-                $('#emailsent').modal('show');
-            });
-        </script>
-        <?php
-    }
-}
-?>
+//if (isset($_GET['getintouch']) or isset($_GET['subscibe']) or isset($_GET['loanApply'])) {
+//    if ($_GET['getintouch'] == 1 or $_GET['subscibe'] == 1 or $_GET['loanApply']) {
+//        ?>
+<!--        <script type="text/javascript">-->
+<!--            $(window).on('load', function () {-->
+<!--                $('#emailsent').modal('show');-->
+<!--            });-->
+<!--        </script>-->
+<!--        --><?php
+//    }
+//}
+//?>
 
 
 </body>

@@ -1,11 +1,11 @@
 body, html {
     height: 100%;
-    font-family: Oswald-Regular, sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-    font-family: Oswald-Regular;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.7;
     color: #4FC3E5;
@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    font-family:courier,arial,helvetica !important;
+    font-family:"Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.7;
     /*color: ;*/
@@ -95,7 +95,7 @@ ul, li {
     color: white;
     margin: 20px auto;
     box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2), 0px 10px 14px 1px rgba(0,0,0,0.14), 0px 4px 18px 3px rgba(0,0,0,0.12);
-    font-family: roboto condensed;
+    font-family: roboto ;
     border-radius: 8px;
     text-transform: none;
     background-size: contain;
@@ -203,6 +203,29 @@ ul, li {
 
 .subscribe-wrapper .submit-btn:hover {
     background-color: #8e62dc;
+}
+
+.modalInput{
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #888;
+    resize: none;
+    vertical-align: middle;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 200ms ease-in;
 }
 
 @media screen and (max-width: 700px)  {

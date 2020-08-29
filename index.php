@@ -132,7 +132,7 @@
         </div>
     </div>
     <div class="text-center" style="margin-top: 80px">
-        <button href="#" class="btn font-weight-bold text-white startnow">Start Now</button>
+        <button href="#" class="btn font-weight-bold text-white startnow" data-toggle="modal" data-target="#myModal">Apply Now</button>
     </div>
 </section>
 
@@ -431,11 +431,40 @@
 </div>
 
 
+<!--<div class="modal" id="emailloan" tabindex="-1" role="dialog">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title ">LOAN APPLY FORM</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                -->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <!--                <button type="button" class="btn btn-primary">Save changes</button>-->-->
+<!--                <button type="button" class="btn close" data-dismiss="modal">Close</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
 <?php include 'footer.php' ?>
 
+<script type="text/javascript">
+    $(window).on('load', function () {
+        $('#myModal').modal('show');
+    });
+</script>
+
+
 <?php
-if (isset($_GET['getintouch']) or isset($_GET['subscibe'])) {
-    if ($_GET['getintouch'] == 1 or $_GET['subscibe'] == 1) {
+if (isset($_GET['getintouch']) or isset($_GET['subscibe']) or isset($_GET['loanApply'])) {
+    if ($_GET['getintouch'] == 1 or $_GET['subscibe'] == 1 or $_GET['loanApply']) {
         ?>
         <script type="text/javascript">
             $(window).on('load', function () {
@@ -446,5 +475,7 @@ if (isset($_GET['getintouch']) or isset($_GET['subscibe'])) {
     }
 }
 ?>
+
+
 </body>
 </html>

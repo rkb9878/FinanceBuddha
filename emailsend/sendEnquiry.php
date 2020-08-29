@@ -59,8 +59,6 @@ $mail->MsgHTML($msg);
 $address = 'rkb9878@gmail.com';
 $mail->AddAddress($address);
 
-//$mail->AddCC("shalinder@vmmeducation.com");
-
 if (!$mail->Send()) {
     echo "No";
 } else {

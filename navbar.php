@@ -27,6 +27,9 @@
             <li class="nav-item">
                 <a href="contact-us.php" class="nav-link m-2 menu-item">Contact Us</a>
             </li>
+            <li class="nav-item">
+                <a type="button" class="nav-link m-2 menu-item" href="#" data-toggle="modal" data-target="#myModal">Apply</a>
+            </li>
         </ul>
     </div>
 </nav>

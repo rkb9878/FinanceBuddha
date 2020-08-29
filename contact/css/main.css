@@ -28,12 +28,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Oswald-Regular, sans-serif;
+	font-family:"Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Oswald-Regular;
+	font-family:"Roboto", "Helvetica", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #4789D3;
@@ -61,7 +61,7 @@ p {
 	font-family: Oswald-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: white;
+	color: gray;
 	margin: 0px;
 }
 

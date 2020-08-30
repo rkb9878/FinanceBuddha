@@ -10,8 +10,10 @@ $phone = $_POST['mobile'];
 $city = $_POST['city'];
 
 //database connection work
+date_default_timezone_set("Asia/Kolkata");
+$currentdateTime = date("l jS \of F Y h:i:s A");
 
-$query = "INSERT INTO `contact`(`name`, `email`, `phone`, `city`) VALUES ('$name','$email','$phone','$city')";
+$query = "INSERT INTO `contact`(`name`, `email`, `phone`, `city`,`datetime`) VALUES ('$name','$email','$phone','$city','$carrentdateTime')";
 if (mysqli_query($conn, $query)) {
 //    echo "done";
 } else {
@@ -21,8 +23,7 @@ if (mysqli_query($conn, $query)) {
 
 
 $adminemail = "python.vmm.2020@gmail.com";
-date_default_timezone_set("Asia/Kolkata");
-$currentdateTime = date("l jS \of F Y h:i:s A");
+
 
 
 $msg = "<style>a

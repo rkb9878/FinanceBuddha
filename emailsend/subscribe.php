@@ -7,8 +7,9 @@ $email = $_POST['email'];
 
 
 //database connection work
-
-$query="INSERT INTO `subscribe`(`email`) VALUES ('$email')";
+date_default_timezone_set("Asia/Kolkata");
+$currentdateTime = date("l jS \of F Y h:i:s A");
+$query="INSERT INTO `subscribe`(`email`,`datetime`) VALUES ('$email','$currentdateTime')";
 if (mysqli_query($conn,$query)){
 //    echo "done";
 }

@@ -22,7 +22,7 @@
     <h1>Contact</h1>
 </div>
 <div class="table-responsive">
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped" id="myTable">
         <thead>
         <tr>
             <th>Name</th>
@@ -30,6 +30,7 @@
             <th>Phone</th>
             <th>City</th>
             <th>Message</th>
+            <th>Date & Time</th>
         </tr>
         </thead>
         <tbody>
@@ -45,6 +46,7 @@
                     <td><?php echo $row['phone']?></td>
                     <td><?php echo $row['city']?></td>
                     <td><?php echo $row['msg']?></td>
+                    <td><?php echo $row['datetime']?></td>
                 </tr>
                 <?php
             }

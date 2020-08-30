@@ -14,8 +14,9 @@ $amt = $_POST['amt'];
 
 
 //database connection work
-
-$query = "INSERT INTO `loan`(`name`, `mobile`, `email`, `state`, `city`, `pincode`, `loan_type`, `amount`) VALUES ('$name','$mobile','$email','$state','$city','$Pincode','$loan_type','$amt')";
+date_default_timezone_set("Asia/Kolkata");
+$currentdateTime = date("l jS \of F Y h:i:s A");
+$query = "INSERT INTO `loan`(`name`, `mobile`, `email`, `state`, `city`, `pincode`, `loan_type`, `amount`,'datetime') VALUES ('$name','$mobile','$email','$state','$city','$Pincode','$loan_type','$amt','$currentdateTime')";
 if (mysqli_query($conn, $query)) {
 //    echo "done";
 } else {

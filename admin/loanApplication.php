@@ -22,7 +22,7 @@
     <h1>Loan Application</h1>
 </div>
 <div class="table-responsive">
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped" id="myTable">
         <thead>
         <tr>
             <th>Name</th>
@@ -33,6 +33,7 @@
             <th>PinCode</th>
             <th>Loan Type</th>
             <th>Amount</th>
+            <th>Data & Time</th>
         </tr>
         </thead>
         <tbody>
@@ -51,6 +52,7 @@
                     <td><?php echo $row['pincode']?></td>
                     <td><?php echo $row['loan_type']?></td>
                     <td><?php echo $row['amount']?></td>
+                    <td><?php echo $row['datetime']?></td>
                 </tr>
             <?php
             }

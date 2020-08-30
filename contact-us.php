@@ -47,7 +47,7 @@
                 Jeevan Bheema Nagar,<br>
                 HAL 3rd Stage,<br>
                 Bangalore - 560075.<br>
-                Telephone: (080) 4090 9654</p>
+                Telephone: 7044461246</p>
 
             <h6 class="heading-h6">E-mail</h6>
             <p>

@@ -22,11 +22,12 @@
     <h1>Subscribe</h1>
 </div>
 <div class="table-responsive">
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped" id="myTable">
         <thead>
         <tr>
             <th>S.No</th>
             <th>Email</th>
+            <th>Date & Time</th>
         </tr>
         </thead>
         <tbody>
@@ -40,6 +41,7 @@
                 <tr>
                     <td><?php echo $count?></td>
                     <td><?php echo $row['email']?></td>
+                    <td><?php echo $row['datetime']?></td>
                 </tr>
                 <?php
                 $count++;

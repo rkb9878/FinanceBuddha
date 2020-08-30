@@ -12,8 +12,9 @@ $message = $_POST['message'];
 
 
 //database connection work
-
-$query="INSERT INTO `contact`(`name`, `email`, `phone`, `msg`) VALUES ('$name','$email','$phone','$message')";
+date_default_timezone_set("Asia/Kolkata");
+$currentdateTime = date("l jS \of F Y h:i:s A");
+$query="INSERT INTO `contact`(`name`, `email`, `phone`, `msg`,`datetime`) VALUES ('$name','$email','$phone','$message','$currentdateTime')";
 if (mysqli_query($conn,$query)){
 //    echo "done";
 }

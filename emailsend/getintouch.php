@@ -10,6 +10,7 @@ $phone = $_POST['mobile'];
 $city = $_POST['city'];
 
 //database connection work
+
 date_default_timezone_set("Asia/Kolkata");
 $currentdateTime = date("l jS \of F Y h:i:s A");
 

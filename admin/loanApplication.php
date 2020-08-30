@@ -36,7 +36,7 @@
             <th>Data & Time</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody style="font-size: 12px; text-align: center">
         <?php
         $query = "SELECT * FROM `loan` ORDER BY id DESC";
         $result = mysqli_query($conn, $query);

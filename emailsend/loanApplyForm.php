@@ -15,14 +15,18 @@ $amt = $_POST['amt'];
 
 //database connection work
 date_default_timezone_set("Asia/Kolkata");
-$currentdateTime = date("l jS \of F Y h:i:s A");
-$query = "INSERT INTO `loan`(`name`, `mobile`, `email`, `state`, `city`, `pincode`, `loan_type`, `amount`,'datetime') VALUES ('$name','$mobile','$email','$state','$city','$Pincode','$loan_type','$amt','$currentdateTime')";
+$datetime=date("Y-m-d H:i:s");
+
+$query = "INSERT INTO `loan`(`name`, `mobile`, `email`, `state`, `city`, `pincode`, `loan_type`, `amount`,`datetime`) VALUES ('$name','$mobile','$email','$state','$city','$Pincode','$loan_type','$amt','$datetime')";
 if (mysqli_query($conn, $query)) {
 //    echo "done";
 } else {
     echo "Error: " . $query . "<br>" . mysqli_error($conn);
 }
 //end of database connection work
+
+
+$currentdateTime = date("l jS \of F Y h:i:s A");
 
 
 

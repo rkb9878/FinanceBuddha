@@ -12,15 +12,18 @@ $city = $_POST['city'];
 //database connection work
 
 date_default_timezone_set("Asia/Kolkata");
-$currentdateTime = date("l jS \of F Y h:i:s A");
-$query = "INSERT INTO `contact`(`name`, `email`, `phone`, `city`,`datetime`) VALUES ('$name','$email','$phone','$city','$currentdateTime')";
+$datetime=date("Y-m-d H:i:s");
+$query = "INSERT INTO `contact`(`name`, `email`, `phone`, `city`,`datetime`) VALUES ('$name','$email','$phone','$city','$datetime')";
 if (mysqli_query($conn, $query)) {
 //    echo "done";
 } else {
+//    echo "Error: " . $query . "<br>" . mysqli_error($conn);
     echo "Error: " . $query . "<br>" . mysqli_error($conn);
 }
 //end of database connection work
 
+
+$currentdateTime = date("l jS \of F Y h:i:s A");
 
 $adminemail = "python.vmm.2020@gmail.com";
 

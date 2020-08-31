@@ -455,11 +455,11 @@
 
 <?php include 'footer.php' ?>
 
-<script type="text/javascript">
-    $(window).on('load', function () {
-        $('#myModal').modal('show');
-    });
-</script>
+<!--<script type="text/javascript">-->
+<!--    $(window).on('load', function () {-->
+<!--        $('#myModal').modal('show');-->
+<!--    });-->
+<!--</script>-->
 
 
 

@@ -213,3 +213,9 @@
 <script src="bootstrap-4.5.1-dist/js/bootstrap.js"></script>
 <script src="fontawesome/js/all.js"></script>
 <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
+
+<script type="text/javascript">
+    $(window).on('load', function () {
+        $('#myModal').modal('show');
+    });
+</script>

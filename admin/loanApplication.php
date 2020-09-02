@@ -21,10 +21,14 @@
 <div class="text-center">
     <h1>Loan Application</h1>
 </div>
+<div class="pl-4 pb-2">
+    <a href="backup/generateExcel.php" class=" btn btn-success rounded-circle"><i class="fa fa-download fa-3x"></i> </a>
+</div>
 <div class="table-responsive">
     <table class="table table-hover table-striped" id="myTable">
         <thead>
         <tr>
+            <th>S.No</th>
             <th>Name</th>
             <th>Mobile</th>
             <th>Email</th>
@@ -38,12 +42,15 @@
         </thead>
         <tbody style="font-size: 12px; text-align: center">
         <?php
-        $query = "SELECT * FROM `loan` ORDER BY id DESC";
+        $query = "SELECT * FROM `loan` ORDER BY id ASC";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) > 0) {
+            $count=1;
             while ($row = mysqli_fetch_assoc($result)) {
+
                 ?>
                 <tr>
+                    <td><?php echo $count;?></td>
                     <td><?php echo $row['name']?></td>
                     <td><?php echo $row['mobile']?></td>
                     <td><?php echo $row['email']?></td>
@@ -55,6 +62,7 @@
                     <td><?php echo $row['datetime']?></td>
                 </tr>
             <?php
+                $count++;
             }
         }else {
             ?>

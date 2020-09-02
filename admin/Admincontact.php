@@ -25,6 +25,7 @@
     <table class="table table-hover table-striped" id="myTable">
         <thead>
         <tr>
+            <th>S.No</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
@@ -35,12 +36,14 @@
         </thead>
         <tbody>
         <?php
-        $query = "SELECT * FROM `contact` ORDER BY id DESC";
+        $query = "SELECT * FROM `contact` ORDER BY id ASC ";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
+                $count=1;
                 ?>
                 <tr>
+                    <td><?php echo $count;?></td>
                     <td><?php echo $row['name']?></td>
                     <td><?php echo $row['email']?></td>
                     <td><?php echo $row['phone']?></td>
@@ -49,6 +52,7 @@
                     <td><?php echo $row['datetime']?></td>
                 </tr>
                 <?php
+                $count++;
             }
         }else {
             ?>

@@ -175,12 +175,11 @@
                                             <div class="col-xs-12 col-md-6">
                                                 <label>Loan Type</label>
                                                 <select name="loan_type" class="modalInput select required"
-                                                        title="Name (Required)">
+                                                        title="Name (Required)" onchange="showHide(this.value)">
                                                     <option>-Select Loan Type-</option>
-
+                                                    <option>Other Loan</option>
                                                     <option>Personal Loan</option>
                                                     <option>Business Loan</option>
-
                                                 </select>
                                             </div>
                                             <div class="col-xs-12 col-md-6">
@@ -189,6 +188,17 @@
                                                        placeholder="Enter Loan Amount"
                                                        class="modalInput white-text"
                                                        required>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="otherLoanStyle" style="display: none">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="otherloan">Describe</label>
+                                                    <textarea name="otherloan" id="otherloan" cols="30"
+                                                              rows="10"
+                                                              class="form-control white-text"
+                                                              style="background: whitesmoke;"></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="text-center">
@@ -218,4 +228,20 @@
     $(window).on('load', function () {
         $('#myModal').modal('show');
     });
+
+    function showHide(obj, s) {
+        console.log(obj);
+        var otherLoanStyle = document.getElementById('otherLoanStyle')
+
+        if (obj == 'Other Loan') {
+            document.getElementById('otherloan').required=true;
+            document.getElementById('otherLoanStyle').style.display = 'block';
+        } else {
+
+            if (otherloan.style.display!='none') {
+                document.getElementById('otherloan').required=false;
+                document.getElementById('otherLoanStyle').style.display = 'none';
+            }
+        }
+    }
 </script>

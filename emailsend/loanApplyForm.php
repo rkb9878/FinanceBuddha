@@ -1,6 +1,8 @@
 <?php
 //session_start();
 include '../database/database.php';
+include 'emailsend.php';
+
 require_once('class.phpmailer.php');
 // include "connection.php";
 $name = $_POST['name'];
@@ -9,32 +11,45 @@ $email = $_POST['email'];
 $state = $_POST['state'];
 $city = $_POST['city'];
 $Pincode = $_POST['pincode'];
-$loan_type = $_POST['loan_type'];
 $amt = $_POST['amt'];
+$otherloan = $_POST['otherloan'];
+$loan_type = $_POST['loan_type'];
 
+if ($loan_type == 'Other Loan') {
+    echo $loan_type;
+    $loan_type = "$otherloan ($loan_type)";
+}
+
+//die($loan_type);
 
 //database connection work
 date_default_timezone_set("Asia/Kolkata");
-$datetime=date("Y-m-d H:i:s");
+$datetime = date("Y-m-d H:i:s");
 
-$query = "INSERT INTO `loan`(`name`, `mobile`, `email`, `state`, `city`, `pincode`, `loan_type`, `amount`,`datetime`) VALUES ('$name','$mobile','$email','$state','$city','$Pincode','$loan_type','$amt','$datetime')";
-if (mysqli_query($conn, $query)) {
-//    echo "done";
+$checkquery = "select * from `loan` where `email`='$email' or `mobile`='$mobile'";
+$result = mysqli_query($conn, $checkquery);
+if (mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    sendEmail($row['email'], $row['name'], $row['mobile']);
 } else {
-    echo "Error: " . $query . "<br>" . mysqli_error($conn);
-}
+
+    $query = "INSERT INTO `loan`(`name`, `mobile`, `email`, `state`, `city`, `pincode`, `loan_type`, `amount`,`datetime`) VALUES ('$name','$mobile','$email','$state','$city','$Pincode','$loan_type','$amt','$datetime')";
+    if (mysqli_query($conn, $query)) {
+//    echo "done";
+    } else {
+        echo "Error: " . $query . "<br>" . mysqli_error($conn);
+    }
 //end of database connection work
 
 
-$currentdateTime = date("l jS \of F Y h:i:s A");
+    $currentdateTime = date("l jS \of F Y h:i:s A");
 
 
-
-$adminemail = "python.vmm.2020@gmail.com";
-date_default_timezone_set("Asia/Kolkata");
-$currentdateTime = date("l jS \of F Y h:i:s A");
+    $adminemail = "python.vmm.2020@gmail.com";
+    date_default_timezone_set("Asia/Kolkata");
+    $currentdateTime = date("l jS \of F Y h:i:s A");
 //if ($captcha == $_SESSION["captcha"]) {
-$msg = "<style>a
+    $msg = "<style>a
     {
     text-decoration:none !important;color:black !important;
     }p
@@ -47,7 +62,7 @@ $msg = "<style>a
    <p style='text-align:left;color: black'>Congratulations you have received a new Member for Loan from your website <span style='color: black;text-decoration:none;'>http://financebuddha.org/</span></p>
 <p ><strong style='text-align:left;color: black'>Name : " . $name . "</strong></p>
 <p><strong style='text-align:left;color: black'>Email : " . $email . "</strong></p>
-<p><strong style='text-align:left;color: black'>Mobile :".$mobile." </strong></p>
+<p><strong style='text-align:left;color: black'>Mobile :" . $mobile . " </strong></p>
 <p style='text-align:left;color: black'><strong>city: </strong>" . $city . "</p>
 <p style='text-align:left;color: black'><strong>state: </strong>" . $state . "</p>
 <p style='text-align:left;color: black'><strong>Pincode: </strong>" . $Pincode . "</p>
@@ -57,41 +72,41 @@ $msg = "<style>a
 <h3 style='text-align:left;color: black'>Thanks & Regards</h3>
 <h4 style='text-align:left;color: black'>Website Development Team</h4>
 ";
-date_default_timezone_set('Asia/Kolkata');
-$mail = new PHPMailer();
-$mail->IsSMTP(); // telling the class to use SMTP
+    date_default_timezone_set('Asia/Kolkata');
+    $mail = new PHPMailer();
+    $mail->IsSMTP(); // telling the class to use SMTP
 
-$mail->SMTPDebug = 1;                     // enables SMTP debug information (for testing)
+    $mail->SMTPDebug = 1;                     // enables SMTP debug information (for testing)
 // 1 = errors and messages
 // 2 = messages only
-$mail->SMTPAuth = true;                  // enable SMTP authentication
-$mail->SMTPSecure = "ssl";            // enable SMTP authentication
+    $mail->SMTPAuth = true;                  // enable SMTP authentication
+    $mail->SMTPSecure = "ssl";            // enable SMTP authentication
 // sets the prefix to the servier
-$mail->Host = "smtp.gmail.com";      // sets GMAIL as the SMTP server
-$mail->Port = 465;                   // set the SMTP port for the GMAIL server
-$mail->Username = "python.vmm.2020@gmail.com";  // GMAIL username
-$mail->Password = "pythonvmm2020";            // GMAIL password
+    $mail->Host = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+    $mail->Port = 465;                   // set the SMTP port for the GMAIL server
+    $mail->Username = "python.vmm.2020@gmail.com";  // GMAIL username
+    $mail->Password = "pythonvmm2020";            // GMAIL password
 
-$mail->SetFrom('python.vmm.2020@gmail.com', "Finance Buddha");
+    $mail->SetFrom('python.vmm.2020@gmail.com', "Finance Buddha");
 
 //$mail->AddReplyTo("service@jbkservices.com.au", "jbkservices");
-$mail->AddReplyTo("python.vmm.2020@gmail.com", "pythonvmm2020");
+    $mail->AddReplyTo("python.vmm.2020@gmail.com", "pythonvmm2020");
 
-$mail->Subject = "New Enquiry";
-$mail->AltBody = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
+    $mail->Subject = "New Enquiry";
+    $mail->AltBody = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
 
-$mail->MsgHTML($msg);
+    $mail->MsgHTML($msg);
 
 // $address = "jbkservices@hotmail.com";
-$address = 'rkb9878@gmail.com';
-$mail->AddAddress($address);
+    $address = 'rkb9878@gmail.com';
+    $mail->AddAddress($address);
 
-if (!$mail->Send()) {
-    echo "No";
-} else {
-    header("Location: ../thankyou.php?d=Loan-application");
+    if (!$mail->Send()) {
+        echo "No";
+    } else {
+        header("Location: ../thankyou.php?d=Loan-application");
+    }
 }
-
 
 
 //

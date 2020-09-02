@@ -12,7 +12,7 @@
 <?php include 'navbar.php' ?>
 <section>
     <div class="text-center" style="margin-top: 130px; margin-bottom: 150px">
-        <h1 class="display-4">Thank you! <?php echo $_GET['d'] ?></h1>
+        <h1 class="display-4">Thank you! <b><?php echo $_GET['d'] ?></b></h1>
         <div>
             <span class="text-success"><i class="fa-4x fa fa-check-circle"></i></span>
         </div>
@@ -197,9 +197,9 @@
                                             <div class="col-xs-12 col-md-6">
                                                 <label>Loan Type</label>
                                                 <select name="loan_type" class="modalInput select required"
-                                                        title="Name (Required)">
+                                                        title="Name (Required)" onchange="showHide(this.value)">
                                                     <option>-Select Loan Type-</option>
-
+                                                    <option>Other Loan</option>
                                                     <option>Personal Loan</option>
                                                     <option>Business Loan</option>
 
@@ -211,6 +211,15 @@
                                                        placeholder="Enter Loan Amount"
                                                        class="modalInput white-text"
                                                        required>
+                                            </div>
+                                        </div>
+                                        <div class="row" id="otherLoanStyle" style="display: none">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="otherloan">Describe</label>
+                                                    <textarea name="otherloan" id="otherloan" cols="30" rows="10"
+                                                              class="form-control white-text" style="background: whitesmoke;"></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="text-center">
@@ -235,7 +244,23 @@
 <script src="bootstrap-4.5.1-dist/js/bootstrap.js"></script>
 <script src="fontawesome/js/all.js"></script>
 <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
+<script>
+    function showHide(obj, s) {
+        console.log(obj);
+        var otherLoanStyle = document.getElementById('otherLoanStyle')
 
+        if (obj == 'Other Loan') {
+            document.getElementById('otherloan').required=true;
+            document.getElementById('otherLoanStyle').style.display = 'block';
+        } else {
+
+            if (otherloan.style.display!='none') {
+                document.getElementById('otherloan').required=false;
+                document.getElementById('otherLoanStyle').style.display = 'none';
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
